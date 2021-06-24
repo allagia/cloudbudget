@@ -1,0 +1,36 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 782px;
+  padding: 116px 50px 50px;
+
+  color: $white;
+  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("../img/bg@1x.jpg");
+
+  @include retina {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("../img/bg@2x.jpg");
+    background-size: cover;
+  }
+
+  &__title {
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    margin: 0 0 40px;
+  }
+
+  &__subtitle {
+    // font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+
+    max-width: 486px;
+    margin: 0 0 54px;
+
+    text-align: center;
+  }
+}

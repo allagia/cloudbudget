@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+  padding-top: 50px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    position: relative;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+
+    padding-left: 36px;
+    margin-right: 162px;
+
+    text-transform: uppercase;
+    color: $white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      width: 26px;
+      height: 19px;
+      background-image: url("../img/cloud.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 1.2;
+    color: $white;
+    text-transform: uppercase;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

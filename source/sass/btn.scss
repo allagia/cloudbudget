@@ -1,0 +1,30 @@
+.btn {
+  font-size: 14px;
+  line-height: 1.2;
+
+  width: 160px;
+  min-height: 50px;
+  padding: 10px 28px;
+
+  color: $white;
+  border: 1px solid;
+  border-color: $white;
+  border-radius: 6px;
+  text-transform: uppercase;
+
+  &--theme-transparant {
+    width: 100px;
+    min-height: 40px;
+    background-color: transparent;
+  }
+
+  &--theme-white {
+    background-color: $white;
+    color: $red;
+  }
+
+  &--theme-colored {
+    background-color: $red;
+    border-color: $red;
+  }
+}
