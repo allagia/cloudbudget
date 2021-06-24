@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 85px;
+  padding-bottom: 86px;
+  background-color: #FAFAFA;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-of-type(2) {
+      padding-right: 68px;
+    }
+
+    &:nth-of-type(3) {
+      padding-right: 55px;
+    }
+
+    &:nth-of-type(4) {
+      padding-right: 36px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  &__address {
+    font-size: 12px;
+    line-height: 1.5;
+
+    margin: 0;
+
+    color: $dark;
+  }
+
+  &__nav-list {
+    @include list-reset;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  &__nav-link {
+    transition: opacity $transition-props;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__social-list {
+    @include list-reset;
+    display: flex;
+    padding-left: 4px;
+  }
+
+  &__social-item {
+    margin-right: 15px;
+  }
+
+  &__partners {
+    width: 216px;
+    height: 31px;
+  }
+
+  &__copyright {
+    font-size: 12px;
+    line-height: 14px;
+
+    color: $dark;
+
+    width: 100%;
+    margin: 100px 0 0;
+  }
+
+  &__mail,
+  &__phone {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  &__mail {
+    margin-bottom: 12px;
+  }
+
+  &__phone {
+    margin-bottom: 20px;
+  }
+}

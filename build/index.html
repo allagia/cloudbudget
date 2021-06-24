@@ -129,8 +129,78 @@
           </div>
         </div>
       </section>
+
+      <section class="contacts container">
+        <div class="contacts__column contacts__column--left">
+          <h2 class="contacts__title title-h2">Contact</h2>
+          <p class="contacts__text paragraph">Questions or&nbsp;concerns? Just fill out the form below and our support team will get back to&nbsp;you within 24&nbsp;hours</p>
+        </div>
+        <div class="contacts__column contacts__column--right">
+          <form class="contacts__form" action="post">
+            <div class="contacts__form-top">
+              <p class="input-wrap">
+                <input class="contacts__input input" type="text" id="first-name" placeholder="First Name" required="">
+                <label class="visually-hidden" for="first-name">First Name</label>
+              </p>
+              <p class="input-wrap">
+                <input class="contacts__input input" type="text" id="last-name" placeholder="Last Name" required="">
+                <label class="visually-hidden" for="last-name">Last Name</label>
+              </p>
+            </div>
+            <p class="input-wrap">
+              <input class="contacts__input input" type="tel" id="phone" placeholder="Phone Number" required="">
+              <label class="visually-hidden" for="phone">Phone Number</label>
+            </p>
+            <p class="input-wrap">
+              <input class="contacts__input input" type="text" id="question" placeholder="Your Question">
+              <label class="visually-hidden" for="question">Your Question</label>
+            </p>
+            <button class="contacts__btn btn btn--theme-colored" type="submit">Submit Now</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer container">
+      <div class="footer__column">
+        <h3 class="footer__title title-h3">Address</h3>
+        <p class="footer__address">Pipang Ltd, Griva Digeni,
+          <br>81-83 Jacovides Tower, 1st Floor
+          <br>1090 Picosia USA</p>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title title-h3">Services</h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#overview">Overview</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#features">Features</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#technology">Technology</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" herf="#">Terms & Conditions</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Privecy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title title-h3">Get in Touch</h3>
+        <a class="footer__mail" href="mailto:info@cloudbudget.com">info@cloudbudget.com</a>
+        <a class="footer__phone" href="tel:+18447217120">+1 844-721-7120</a>
+        <ul class="footer__social-list">
+          <li class="footer__social-item"><a class="footer__social-link footer__social-link--facebook" aria-label="facebook">
+            <img src="img/fb.svg" alt="иконка фейсбука">
+          </a></li>
+          <li class="footer__social-item"><a class="footer__social-link footer__social-link--linkedin" aria-label="linkedin">
+            <img src="img/in.svg" alt="иконка линкедин">
+          </a></li>
+          <li class="footer__social-item"><a class="footer__social-link footer__social-link--twitter" aria-label="twitter">
+            <img src="img/tw.svg" alt="иконка твитера">
+          </a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title title-h3">We Support</h3>
+        <img src="img/partners@1x.png" srcset="img/partners@2x.png" alt="виза и мастеркард" class="footer__partners">
+      </div>
+      <p class="footer__copyright">Copyright 2018 CloudBudget</p>
+    </footer>
 
 </body>
 </html>
