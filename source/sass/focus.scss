@@ -1,0 +1,26 @@
+.focus {
+  background-color: $red;
+  color: $white;
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+
+    margin-top: 46px;
+  }
+
+  &__item {
+    margin-right: 22px;
+
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+
+  &__wrapper {
+    &--text {
+      padding-top: 12px;
+    }
+  }
+}

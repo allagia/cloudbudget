@@ -11,6 +11,12 @@
   border-color: $white;
   border-radius: 6px;
   text-transform: uppercase;
+  transition: all $transition-props;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   &--theme-transparant {
     width: 100px;

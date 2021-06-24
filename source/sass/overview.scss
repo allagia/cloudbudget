@@ -1,0 +1,44 @@
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 95px;
+  padding-right: 260px;
+
+  &__wrapper {
+    width: calc(50% - 62px);
+
+    &--text {
+      padding-top: 26px;
+    }
+
+    &--img {
+      border-radius: 15px;
+      background-color: #C4C4C4;
+      overflow: hidden;
+    }
+  }
+
+  &__img {
+    width: 445px;
+    height: 311px;
+  }
+
+  &__title {
+    margin: 0 0 44px;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 22px;
+    color: $red;
+
+    transition: opacity $transition-props;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

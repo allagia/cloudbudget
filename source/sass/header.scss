@@ -20,6 +20,13 @@
     text-transform: uppercase;
     color: $white;
 
+    transition: opacity $transition-props;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -58,6 +65,13 @@
     line-height: 1.2;
     color: $white;
     text-transform: uppercase;
+
+    transition: opacity $transition-props;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
 
     &.active {
       font-weight: bold;
