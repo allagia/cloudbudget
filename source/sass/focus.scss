@@ -18,6 +18,16 @@
     }
   }
 
+  &__link {
+    display: block;
+    transition: opacity $transition-props;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
   &__wrapper {
     &--text {
       padding-top: 12px;

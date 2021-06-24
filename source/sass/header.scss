@@ -5,6 +5,10 @@
   &__wrapper {
     display: flex;
     align-items: center;
+
+    @include desktop {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -22,6 +26,10 @@
 
     transition: opacity $transition-props;
     cursor: pointer;
+
+    @include desktop {
+      margin-right: auto;
+    }
 
     &:hover {
       opacity: 0.5;

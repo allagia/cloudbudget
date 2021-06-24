@@ -3,4 +3,8 @@
   max-width: 1440px;
   padding: 0 165px;
   margin: 0 auto;
+
+  @include desktop {
+    padding: 0 100px;
+  }
 }

@@ -4,14 +4,20 @@
   align-items: center;
   justify-content: center;
   min-height: 782px;
+  height: 100vh;
   padding: 116px 50px 50px;
 
   color: $white;
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("../img/bg@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @include retina {
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("../img/bg@2x.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &__title {

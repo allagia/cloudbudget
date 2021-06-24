@@ -1,10 +1,13 @@
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   padding-top: 85px;
   padding-bottom: 86px;
   background-color: #FAFAFA;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   &__column {
     display: flex;
@@ -12,14 +15,26 @@
 
     &:nth-of-type(2) {
       padding-right: 68px;
+
+      @include desktop {
+        padding-right: 0;
+      }
     }
 
     &:nth-of-type(3) {
       padding-right: 55px;
+
+      @include desktop {
+        padding-right: 0;
+      }
     }
 
     &:nth-of-type(4) {
       padding-right: 36px;
+
+      @include desktop {
+        padding-right: 0;
+      }
     }
   }
 
@@ -61,6 +76,16 @@
     margin-right: 15px;
   }
 
+  &__social-link {
+    display: block;
+    transition: opacity $transition-props;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
   &__partners {
     width: 216px;
     height: 31px;
@@ -80,6 +105,12 @@
   &__phone {
     font-size: 12px;
     line-height: 1.2;
+    transition: opacity $transition-props;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__mail {

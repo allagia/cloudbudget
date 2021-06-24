@@ -6,6 +6,10 @@
   padding-bottom: 95px;
   padding-right: 260px;
 
+  @include desktop {
+    padding-right: 100px;
+  }
+
   &__wrapper {
     width: calc(50% - 62px);
 
@@ -21,8 +25,10 @@
   }
 
   &__img {
-    width: 445px;
-    height: 311px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__title {

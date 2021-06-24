@@ -13,6 +13,7 @@
   text-transform: uppercase;
   transition: all $transition-props;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     opacity: 0.5;
