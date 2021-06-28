@@ -7,14 +7,40 @@
   padding-right: 260px;
 
   @include desktop {
-    padding-right: 100px;
+    padding-right: 50px;
+  }
+
+  @include tablet {
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   &__wrapper {
     width: calc(50% - 62px);
 
+    @include tablet {
+      width: calc(50% - 15px);
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
     &--text {
       padding-top: 26px;
+
+      @include mobile {
+        padding-top: 0;
+        margin-bottom: 30px;
+      }
     }
 
     &--img {
@@ -33,6 +59,10 @@
 
   &__title {
     margin: 0 0 44px;
+
+    @include tablet {
+      margin: 0 0 30px;
+    }
   }
 
   &__link {

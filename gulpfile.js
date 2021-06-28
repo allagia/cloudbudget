@@ -133,5 +133,5 @@ gulp.task('pixelGlass', function () {
       .pipe(gulp.dest('build/pixelPerfect'));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'webp', 'vendor', 'vendor-styles', 'css', 'sprite', 'html', 'pixelGlass'));
+gulp.task('build', gulp.series('clean', 'copy', 'webp', 'vendor', 'vendor-styles', 'css', 'sprite', 'js', 'html', 'pixelGlass'));
 gulp.task('start', gulp.series('build', 'server'));

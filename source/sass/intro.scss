@@ -20,6 +20,11 @@
     background-repeat: no-repeat;
   }
 
+  @include mobile {
+    min-height: 450px;
+    padding: 70px 20px 30px;
+  }
+
   &__title {
     font-size: 72px;
     line-height: 86px;
@@ -27,6 +32,13 @@
     text-transform: uppercase;
 
     margin: 0 0 40px;
+
+    @include mobile {
+      font-size: 34px;
+      line-height: 36px;
+
+      margin: 0 0 20px;
+    }
   }
 
   &__subtitle {
@@ -38,5 +50,11 @@
     margin: 0 0 54px;
 
     text-align: center;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 0 0 40px;
+    }
   }
 }

@@ -29,6 +29,10 @@ main {
   flex-grow: 1;
   margin-top: -88px;
   overflow: hidden;
+
+  @include mobile {
+    margin-top: -70px;
+  }
 }
 
 a {
@@ -56,5 +60,10 @@ button {
   padding: 0;
   white-space: nowrap;
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.scroll-lock {
+  min-height: 100vh;
   overflow: hidden;
 }

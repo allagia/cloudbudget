@@ -4,28 +4,67 @@
   padding-top: 118px;
   padding-bottom: 123px;
 
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__column {
     width: calc(50% - 15px);
 
+    @include mobile {
+      width: 100%;
+    }
+
     &--left {
       padding: 0 80px 0 10px;
+
+      @include tablet {
+        padding: 0;
+      }
+
+      @include mobile {
+        margin-bottom: 30px;
+      }
     }
   }
 
   &__title {
     margin-bottom: 54px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__form-top {
     display: flex;
     justify-content: space-between;
 
+    @include tablet {
+      flex-direction: column;
+    }
+
     .input-wrap {
       width: calc(50% - 15px);
+
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 
   &__btn {
     margin-top: 3px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

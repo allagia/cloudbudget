@@ -3,6 +3,16 @@
   padding-bottom: 86px;
   background-color: #FAFAFA;
 
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +22,11 @@
   &__column {
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+    }
 
     &:nth-of-type(2) {
       padding-right: 68px;
@@ -40,6 +55,10 @@
 
   &__title {
     margin-bottom: 33px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__address {
@@ -88,7 +107,7 @@
 
   &__partners {
     width: 216px;
-    height: 31px;
+    height: auto;
   }
 
   &__copyright {
@@ -99,6 +118,10 @@
 
     width: 100%;
     margin: 100px 0 0;
+
+    @include tablet {
+      margin: 50px 0 0;
+    }
   }
 
   &__mail,
